@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="prof">
+    <div class="top_part">
+        <img src="{{ url_for('static', filename='2021-02-10.jpg')}}" alt="Me">
+        <h4>Rojae Martin</h4>
+        <p>@rjeenn</p>
+        <p>Location: Manchester, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>
+    <div class="bottom_part">
+        <p>A second year computing student learning flask for the first time. I used to major in Biochemistry with a minor in Computer Science, but now I do Computer Science.</p>
+        <div class="analytics">
+            <p>Posts: 0</p>
+            <p>Followers: 10</p>
+            <p>Following: 1</p>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
